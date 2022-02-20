@@ -4,12 +4,15 @@ using UnityEngine;
 [HelpURL("https://docs.google.com/document/d/1rdTEVSrCcYOjqTJcFCHj46RvnbdJhmQUb3gHMDhVftI/edit?usp=sharing")]
 public class ScalerModule : MonoBehaviour
 {
-    private Vector3 targetScale = new Vector3(2,2,2);
-
+    [SerializeField]
+    private Vector3 targetScale = new Vector3(2, 2, 2);
+    [SerializeField]
     private float changeSpeed;
-
+    [SerializeField]
     private Vector3 defaultScale;
+    [SerializeField]
     private Transform myTransform;
+    [SerializeField]
     private bool toDefault;
 
     private void Start()
