@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7333736823180049569}
   - component: {fileID: 7333736823180049568}
   - component: {fileID: 7333736823180049575}
+  - component: {fileID: 2124660116315132673}
   - component: {fileID: 7333736823180049574}
   m_Layer: 0
   m_Name: TransparentModule
@@ -82,6 +83,23 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2124660116315132673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7333736823180049573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9bee983cffdd634ba8c1de658d0ca1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.2
+  mygameObject: {fileID: 0}
+  step: 1
+  count: 1
+  spawn_point: {x: 0, y: 0, z: 0}
 --- !u!114 &7333736823180049574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,3 +113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeSpeed: 1
+  defaultAlpha: 0
+  mat: {fileID: 0}
+  toDefault: 0

@@ -239,6 +239,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2124660116315132673, guid: ed2e39ee0d2adb142a7d126e662eb0f0, type: 3}
+      propertyPath: step
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124660116315132673, guid: ed2e39ee0d2adb142a7d126e662eb0f0, type: 3}
+      propertyPath: count
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124660116315132673, guid: ed2e39ee0d2adb142a7d126e662eb0f0, type: 3}
+      propertyPath: mygameObject
+      value: 
+      objectReference: {fileID: 1118671964}
     - target: {fileID: 7333736823180049569, guid: ed2e39ee0d2adb142a7d126e662eb0f0, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -334,6 +346,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1118671964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7333736823180049573, guid: ed2e39ee0d2adb142a7d126e662eb0f0, type: 3}
+  m_PrefabInstance: {fileID: 710244724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1218912167
 PrefabInstance:
   m_ObjectHideFlags: 0
