@@ -226,7 +226,7 @@ MonoBehaviour:
   myTransform: {fileID: 672567873}
   startPosition: {x: 0, y: 0, z: 0}
   endPosition: {x: 3, y: 0, z: 0}
-  speed: 1.2
+  speed: 0.08
 --- !u!4 &672567873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 780059476711883182, guid: d9115fc0b168d924a8e7e5f9ea27a212, type: 3}
@@ -351,7 +351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 780059476711883182, guid: d9115fc0b168d924a8e7e5f9ea27a212, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.26
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 780059476711883182, guid: d9115fc0b168d924a8e7e5f9ea27a212, type: 3}
       propertyPath: m_LocalPosition.y
@@ -359,7 +359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 780059476711883182, guid: d9115fc0b168d924a8e7e5f9ea27a212, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.32
+      value: 2.24
       objectReference: {fileID: 0}
     - target: {fileID: 780059476711883182, guid: d9115fc0b168d924a8e7e5f9ea27a212, type: 3}
       propertyPath: m_LocalRotation.w
@@ -392,6 +392,10 @@ PrefabInstance:
     - target: {fileID: 780059476711883183, guid: d9115fc0b168d924a8e7e5f9ea27a212, type: 3}
       propertyPath: debug
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 780059477964288736, guid: d9115fc0b168d924a8e7e5f9ea27a212, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9115fc0b168d924a8e7e5f9ea27a212, type: 3}

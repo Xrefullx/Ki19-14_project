@@ -38,6 +38,7 @@ public class TransparentModule : MonoBehaviour
 
     private IEnumerator ChangeTransparencyCoroutine(Color target)
     {
+        
         Color start = mat.color;
         float t = 0;
         while (t < 1)

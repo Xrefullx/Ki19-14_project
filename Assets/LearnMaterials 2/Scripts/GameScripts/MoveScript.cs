@@ -27,12 +27,14 @@ public class MoveScript : GameScript
     }
     private IEnumerator MoveToPoint()
     {
-        
-        while (myTransform.position != endPosition)
-        { 
-            myTransform.position = Vector3.Lerp(transform.position,endPosition, speed * Time.deltaTime);
-            Debug.Log(myTransform.position);
+        Vector3 start = myTransform.eulerAngles;
+        float t = 0;
+        Vector3 angle = new Vector3(0,90,0);
+        while (t < 9)
+        {
+            t += Time.deltaTime * speed;
+            myTransform.localRotation  = Quaternion.Euler(Vector3.Lerp(start, angle, t));
             yield return null;
-        }
+        } 
     }
 }
