@@ -11,7 +11,7 @@ public class InteractiveRaycast : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void AddNext(InteractiveBox box)
     {
         
     }
