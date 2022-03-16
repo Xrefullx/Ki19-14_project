@@ -4,15 +4,37 @@ using UnityEngine;
 
 public class InteractiveBox : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public InteractiveBox next;
+    public Transform Transform;
+
     public void Start()
     {
-        
+        Transform = transform;
     }
 
-    // Update is called once per frame
-    private void GetDamage(float value)
+
+    public void AddNext(InteractiveBox box)
     {
         
+
+        if (next == null)
+        {
+            next = box;
+        }
+        Ray ray = new Ray(Transform.position, box.Transform.position);
+        Debug.DrawLine(transform.position, box.Transform.position, Color.red);
+
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            ObstacleItem tt = hit.transform.GetComponent<ObstacleItem>(); ;
+            if (tt != null)
+            {
+                tt.GetDamage(Time.deltaTime);
+            }
+        }
     }
+
+    
+    
 }

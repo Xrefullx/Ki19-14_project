@@ -9,7 +9,7 @@ public class ObstacleItem : MonoBehaviour
     public UnityEvent onDestroyObstacle;
     public MeshRenderer mesh;
 
-    void GetDamage(float value)
+    public void GetDamage(float value)
     {
         currentValue -= value;
         if (currentValue == 1) {
@@ -21,16 +21,5 @@ public class ObstacleItem : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    /*private IEnumerator ChangeColor()
-    {
-        Vector3 start = myTransform.eulerAngles;
-        float t = 0;
-        Vector3 angle = new Vector3(0, 90, 0);
-        while (t < 9)
-        {
-            t += Time.deltaTime * speed;
-            myTransform.localRotation = Quaternion.Euler(Vector3.Lerp(start, angle, t));
-            yield return null;
-        }
-    }*/
+    
 }
