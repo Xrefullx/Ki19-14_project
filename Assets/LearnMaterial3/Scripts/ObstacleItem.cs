@@ -10,14 +10,18 @@ public class ObstacleItem : MonoBehaviour
     public MeshRenderer mesh;
 
     public void GetDamage(float value)
-    {
+    { 
         currentValue -= value;
+        currentValue = Mathf.Clamp(currentValue,0,1);
         if (currentValue == 1) {
             mesh.materials[0].color = Color.Lerp(mesh.materials[0].color, Color.white, value);
-        } else if (currentValue == 0)
+        } else if (currentValue < 0.9 && currentValue > 0)
         {
-            mesh.materials[0].color = Color.Lerp(mesh.materials[0].color, Color.red, value);
+            mesh.materials[0].color = Color.Lerp(mesh.materials[0].color, Color.red,  value); 
+        }
+        else if (currentValue == 0){
             onDestroyObstacle.Invoke();
+            Debug.Log ("Invoke");
             Destroy(gameObject);
         }
     }

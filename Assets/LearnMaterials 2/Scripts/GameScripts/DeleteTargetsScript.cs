@@ -23,7 +23,7 @@ public class DeleteTargetsScript : GameScript
     }
 
     private IEnumerator ScaleToZero()
-     {
+     { 
         for (int i = this.myTransform.childCount; i > 0; --i) { 
             while (myTransform.GetChild(0).transform.localScale.x > 0.0f)
          {

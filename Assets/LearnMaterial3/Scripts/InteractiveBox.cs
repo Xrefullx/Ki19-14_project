@@ -22,11 +22,11 @@ public class InteractiveBox : MonoBehaviour
             next = box;
         }
         Ray ray = new Ray(Transform.position, box.Transform.position);
-        Debug.DrawLine(transform.position, box.Transform.position, Color.red);
 
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 100))
         {
+            Debug.Log ("select " + hit.collider.name);
             ObstacleItem tt = hit.transform.GetComponent<ObstacleItem>(); ;
             if (tt != null)
             {
@@ -34,6 +34,12 @@ public class InteractiveBox : MonoBehaviour
             }
         }
     }
+    void Update()
+    { 
+        if(next)
+            Debug.DrawLine(transform.position, next.Transform.position, Color.red);
+    }
+    
 
     
     
