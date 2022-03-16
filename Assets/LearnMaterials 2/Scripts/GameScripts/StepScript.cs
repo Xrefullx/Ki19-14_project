@@ -18,7 +18,7 @@ public  class StepScript : GameScript
 
     [SerializeField]
     private Vector3 spawn_point;
-
+    [ContextMenu("Uecm")]
     public override void Use() 
     {
         Debug.Log("test3");
@@ -30,7 +30,7 @@ public  class StepScript : GameScript
         for (int i = 0; i < count; i++)
         {
             spawn_point.x += step;
-            Instantiate(mygameObject, spawn_point, Quaternion.identity);
+            Instantiate(mygameObject, spawn_point, Quaternion.identity,transform);
             yield return null;
 
         }
