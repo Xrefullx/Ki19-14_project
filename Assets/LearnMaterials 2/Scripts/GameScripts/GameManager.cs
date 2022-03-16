@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     private List<GameScript> gameScripts;
     [SerializeField]
     private bool isStartTest; // запускаем метод Use у всех объектов в списке gameScripts
-    
+    [ContextMenu("Uecm")]
     private void Start()
     { 
         GameScript[] finedScripts = FindObjectsOfType(typeof(GameScript)) as GameScript[];
