@@ -6,7 +6,7 @@ public class InteractiveRaycast : MonoBehaviour
 { 
     // Start is called before the first frame update
     [SerializeField]
-    Transform prefab;
+    GameObject prefab;
 
     [SerializeField]
     float damage = 0.2f;
@@ -58,7 +58,7 @@ public class InteractiveRaycast : MonoBehaviour
         void SpawnBox(Vector3 position)
         {
            
-            Transform transform_box = Instantiate(prefab,new Vector3(position.x,position.y,position.z),Quaternion.identity); 
+            Transform transform_box = Instantiate(prefab.transform,new Vector3(position.x,position.y,position.z)+transform.up,Quaternion.identity); 
             
         }
  

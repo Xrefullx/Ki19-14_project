@@ -5,17 +5,21 @@ using UnityEngine.Events;
 
 public class ObstacleItem : MonoBehaviour
 {
-    public float currentValue =1;
+    public float currentValue;
     public UnityEvent onDestroyObstacle;
     public MeshRenderer mesh;
     public Color fullHPColor;
     public Color zeroHPColor;
 
 
-
-    void GetDamage(float value)
+    public void Start()
     {
-        currentValue -= value*Time.deltaTime; 
+        currentValue = 1;
+    }
+
+    public void GetDamage(float value)
+    {
+        currentValue -= value; 
         mesh.materials[0].color = Color.Lerp(zeroHPColor, fullHPColor, currentValue);
         if (currentValue <= 0)
         {

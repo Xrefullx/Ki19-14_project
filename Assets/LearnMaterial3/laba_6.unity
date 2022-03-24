@@ -331,10 +331,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   mesh: {fileID: 362938564}
-  fullHPColor: {r: 0.21698111, g: 0.10726235, b: 0.10726235, a: 0}
-  zeroHPColor: {r: 1, g: 0.032075405, b: 0.032075405, a: 0}
-  used: 0
-  damage: 0.000001
+  fullHPColor: {r: 0.13207549, g: 0.049092207, b: 0.049092207, a: 0}
+  zeroHPColor: {r: 0.9433962, g: 0.0391598, b: 0.0391598, a: 0}
 --- !u!1 &600803692
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,6 +443,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cdb9a0923112bcb409519aa76d134f20, type: 2}
+    - target: {fileID: 4361871776098060822, guid: 823664e6bea874443b70a14b9aae385f, type: 3}
+      propertyPath: m_TagString
+      value: InteractivePlane
+      objectReference: {fileID: 0}
     - target: {fileID: 7695274589164003425, guid: 823664e6bea874443b70a14b9aae385f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -507,6 +509,7 @@ GameObject:
   - component: {fileID: 1214296483}
   - component: {fileID: 1214296482}
   - component: {fileID: 1214296481}
+  - component: {fileID: 1214296484}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -579,6 +582,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1214296484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214296480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd074d778d73e964e9768175c30ca89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 648288266176318768, guid: 8758609fa3139b243b817e5b155a0ebb, type: 3}
+  damage: 0.1
 --- !u!1 &1529067783
 GameObject:
   m_ObjectHideFlags: 0
